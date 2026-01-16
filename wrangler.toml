@@ -1,0 +1,13 @@
+name = "cloudflare-r2-token-proxy"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# Configure the following via Cloudflare Dashboard (Workers → Settings → Bindings):
+#
+# R2 Bucket Binding:
+#   - Variable name: R2_BUCKET
+#   - R2 bucket: <your-bucket-name>
+#
+# Secrets (Workers → Settings → Variables → Environment Variables):
+#   - AUTH_TOKEN: Required, the token for authentication
+#   - PATH_PREFIX: Optional, URL path prefix (e.g., "/proxy")
